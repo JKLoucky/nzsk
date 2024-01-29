@@ -101,7 +101,7 @@ pre_check() {
         fi
     fi
 
-    read -e -r -p "是否安装带网络监控版本？[Y/n] (默认no):" input
+    input='y'
     case $input in
     [yY][eE][sS] | [yY])
         Docker_IMG="docker.io\/lvlvcc\/nezha-dashboard"
